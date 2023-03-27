@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <title>Zell Educationi Add to cart form prototype</title>
+    </head>
+    <body>
+        <div class="container">
+            <!--Section: Contact v.2-->
+            <section class="mb-4">
+                <!--Section heading-->
+                <h2 class="h1-responsive font-weight-bold text-center my-4">Add product to cart</h2>
+                <!--Section description-->
+                <p class="text-center w-responsive mx-auto mb-5">Ready to begin your finance journey? 
+                </p>
+                <p class="text-center w-responsive mx-auto mb-5">
+                    <img src="prodimg.jpeg" alt="product image" width="auto" height="auto" style="vertical-align:bottom;margin:0px 0px"> </p>
+                    <p class="text-center w-responsive mx-auto mb-5">
+                    Add product to cart to begin 
+                </p>
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-md-9 mb-md-0 mb-5">
+                        <form id="product-form" name="product-form"
+                            action="https://us-central1-add-to-cart-b4b97.cloudfunctions.net/storeFormDetails" method="POST">
+                            <!--Grid row-->
+                            <div class="row">
+                                <!--Grid column-->
+                                <div class="col-md-8">
+                                    <div class="md-form mb-1">
+                                        <label for="firstname" class="">First Name</label>
+                                        <input type="text" id="firstname" name="firstname" class="form-control" placeholder="Your First name..">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="md-form mb-1">
+                                        <label for="lastname" class="">Last name</label>
+                                        <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Your Last name..">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="md-form mb-1">
+                                        <label for="email" class="">Email</label>
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="Your email..">
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <label for="phonecc" class="">Phone Country code</label>
+                                        <input type="text" id="phonecc" name="phonecc" class="form-control" placeholder="+91">
+                                    </div>
+                                    <div class="md-form mb-0">
+                                        <label for="email" class="">Phone number</label>
+                                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="10 digit phone number">
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+                            </div>
+                            <!--Grid row-->
+                            <!--Grid row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <label for="location" class="">City</label>
+                                        <select id="location" name="location" class="form-control">
+                                            <option value="Mumbai">Mumbai</option>
+                                            <option value="Bengaluru">Bengaluru</option>
+                                            <option value="Delhi">Delhi</option>
+                                          </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+                            <!--Grid row-->
+                            
+                                <!--Grid column-->
+                                <input type="hidden" id="product" name="product" value="bots_prod" class="form-control">
+                           
+                            <!--Grid row-->
+                            <div class="text-center text-md-left">
+                                <button type="submit" class="btn btn-primary" onclick="showInput()">Submit</a>
+                            </div>
+                            <div class="status"></div>
+                            
+                        </form>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+    
+                    <!--Grid column-->
+                </div>
+            </section>
+        </div>
+        <!--Section: Contact v.2-->
+    </body>
+</html>
